@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<link rel="stylesheet" href="ww2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Nilai Mahasiswa</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    .container { max-width: 400px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+    .result { font-weight: bold; }
+    .pass { color: green; }
+    .fail { color: red; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Kalkulator Nilai Mahasiswa</h2>
+    <label>Tugas (30%):</label>
+    <input type="number" id="tugas" min="0" max="100" required><br>
+    
+    <label>UTS (30%):</label>
+    <input type="number" id="uts" min="0" max="100" required><br>
+    
+    <label>UAS (40%):</label>
+    <input type="number" id="uas" min="0" max="100" required><br><br>
+    
+    <button onclick="hitungNilai()">Hitung Nilai</button>
+    
+    <div id="hasil" class="result"></div>
+  </div>
+
+  <script src="ww1.js"></script>
+</body>
+</html>
